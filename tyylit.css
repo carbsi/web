@@ -1,0 +1,448 @@
+html {
+    display: block;
+}
+body {
+    background-color: white;
+    color: black;
+    font-family: "Arial", sans-serif;
+    margin-left: 0%;
+    margin-right: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+header {
+    padding: 7px;
+    padding-left: 0px;
+}
+
+main, footer {
+    padding: 5px;
+    margin: 8px;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    padding-inline-start: 15px;
+}
+header ul li.poikkeus {
+    border-right: solid #0e0583 0px;
+}
+header ul li {
+    display: inline;
+    border-right: solid 1px;
+    border-right-color: #d2b7a3;
+    padding-right: 12px;
+    padding-left: 6px;
+    margin-right: 1px;
+}
+
+footer p {
+    float: right;
+    margin: 0px;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-right: 2em;
+}
+figure {
+    display: inline-block;
+    text-align: center;
+    font-weight: bold;
+}
+figure img {
+    max-width: 100%;
+}
+nav {
+    display: block;
+    float: right;
+    border: #b6b6b2 9px;
+    border-style: solid;
+    border-width: 0.6em;
+    border-color: #b6b6b2;
+    margin-right: 8px;
+    margin-left: 8px;
+    margin-top: 30px;
+    padding: 10px;
+    width: 200px;
+    padding-bottom: 0.0em;
+    padding-top: 0.0em;
+    background-color: #f5ceb0;
+    
+}
+header, footer {
+    background-color: #f5ceb0;
+}
+
+ul li::marker {
+    unicode-bidi: isolate;
+    font-variant-numeric: tabular-nums;
+    text-transform: none;
+    text-indent: 0px !important;
+    text-align: start !important;
+    text-align-last: start !important;
+}
+ul ul {
+    list-style-type: circle;
+}
+nav ul {
+    padding-left: 12px;
+}
+
+.table
+{
+    border-collapse :collapse;
+    border: 8px dashed #b3b4b1;    
+}
+
+.table td, .table th
+{
+    padding: 8px;
+    border: 2px dotted #b3b4b1;
+    margin: 0;
+    border-spacing: 0;
+    text-align: right;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbarbottomflex {
+    background-color: #f5ceb0;
+    width: 100%;
+    /* height: 5%; */
+    /* min-height: 4vh; */
+    flex: none;
+    margin-bottom: 2%;
+    margin: 0;
+    border: none;
+    overflow: hidden;
+}
+
+.navbarbottomflex ul {
+    padding-left: 20px;
+    margin-top: 15px;
+    margin-left: 13.750em
+}
+.navbarbottomflex ul li {
+    display: inline;
+}
+.navbarbottomflex ul li a:visited {
+    color: #0000ee;
+}
+.navbarbottomflex ul li:last-child {
+    float: right;
+    margin-right: 5px;
+}
+
+.navbartopflex {
+    background-color: #f8ced1;
+    margin: 0;
+    padding: 0;
+    padding-left: 0px;
+    width: 100%;
+    height: 5%;
+    flex: none;
+}
+
+header ul, header form
+{
+    display: inline-block;
+}
+
+.navflex.sidebar
+{
+    box-sizing: border-box;
+    border: none;    
+    border: none;
+    margin: 0;
+}
+
+.mainflex.donec
+{
+    float: left;
+    width: calc(100% - 200px);
+    box-sizing: border-box;
+    padding-left: 20px;
+    margin: 0;
+}
+
+video
+{
+    width: 100%;    
+}
+
+/*@media(max-width: 767px){*/
+@media print {
+    .navbartop, .navbar {
+        display: none;
+      }
+      body {
+        margin-top: 0.0005em;
+        margin-left: 0.0005em;
+        margin-right: 0.0005em;
+        margin-bottom: 0.0005em;
+      }
+      p {
+        font-family: "Times New Roman", Times, serif;
+      }
+
+}
+@media all and (max-width: 600px) {
+
+    img {
+        max-width: 100%;
+      }
+      html>body {
+        margin-right: 0;
+      }
+      
+      body {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 5em;
+        margin-bottom: 0;
+        padding: 0.5em;
+        background: white none;
+        font-family: Arial, sans-serif;
+        /* normaalisivuilla iso line-height 
+           parantaa luettavuutta,
+           mutta kännykässä venyttää sivua 
+           ehkä vähän liikaakin */
+        font-size: 100%;
+      }
+      
+      img {
+        /* varmistetaan, että kuvat mahtuvat
+           kapeaankin selainikkunaan */
+        max-width: 100%;
+      }
+      
+      ul.toc {
+        font-size: 0.7em;
+        list-style-type: none;
+      }
+      
+      ul.toc ul {
+        list-style-type: none;
+      }
+      
+      .video {
+        float: none;
+        width: 100%;
+        margin: 0;
+        padding: 2px;
+      }
+      
+      /* turhat marginaalit pois,
+         niin listat mahtuvat kunnolla
+         näytölle */
+      ul {
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: 1em;
+        padding: 0;
+      }
+      
+      li {
+        padding: 0;
+        margin: 0;
+      }
+      
+      /* poistetaan vähemmän oleellisia
+         navigointeja, paras olisi, jos
+         nämä saisi sivun loppuun */
+      .prev, .next {
+        display: none;
+      }
+      
+      .main {
+        margin: 0;
+        padding: 0;
+        position: static;
+        overflow: hidden;
+      }
+      
+      /* leivänmuru jätetään sivun alalaitaan */
+      .breadcrumb {
+        width: auto;
+        background: transparent;
+        color: black;
+      }
+      
+      .breadcrumb .logo {
+        display: inline;
+        float: none;
+      }
+      
+      .breadcrumb .img {
+        float: none;
+      }
+      
+      body>.breadcrumb {
+        position: static; 
+      }
+      
+      .breadcrumb li {
+        list-style-type: circle;
+        display: list-item;
+        border: 0;
+        float: none;
+        margin-left: 1.5em;
+        width: auto;
+      }
+
+      
+      /* sivunavigointi pois */
+      body>.navbartop {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 0;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        padding-top: 0.5em;
+      }
+      
+      .navbartop form, .logo, #otsake, table, pre, textarea, iframe  {
+        display: none;
+        max-width: 100%;
+      }
+      
+      .navbartop {
+        margin: 0;
+        width: 100%;
+        display: block;
+      }
+      
+      .navbartop ul  {
+        margin: 0;
+        padding: 0;
+      }
+      
+      .navbartop ul li {
+        display: inline;
+        margin: 0;
+        padding: 0;
+        border-left: 1px solid black;
+      }
+      .navbartop ul li:first-child {
+        border-left: 0;
+      }
+      .navbartop ul li a {
+        display: inline;
+        padding: 0;
+      }
+      
+      .navbartop ul li a:link {
+        background: none transparent;
+        padding: 0;
+        margin: 0;
+        padding-left: 2px;
+        padding-right: 2px;
+      }
+      
+      .navbartop ul li a:hover {
+        background: none transparent;
+        color: black;
+        padding: 0;
+        margin: 0;
+        padding-left: 2px;
+        padding-right: 2px;
+      }
+      
+      /* muutetaan otsikot järkevän
+         kokoisiksi */
+      h1 {
+        font-size: 120%;
+        margin: 0;
+        padding: 0;
+        padding-top: 0.5em;
+      }
+      
+      h2 {
+        font-size: 110%;
+        margin: 0;
+        padding: 0;
+        padding-top: 0.4em;
+      }
+      
+      h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 100%;
+        font-weight: bolder;
+        padding-top: 0.4em;
+      }
+      
+      /* linearisoidaan taulukot */
+      td, th, tr {
+        display: block;
+        border: none;
+        background: white none;
+      }
+      
+      /* erotetaan kuitenkin taulukon rivit */
+      tr {
+        border: 1px solid black;
+      }
+      
+      .url {
+        font-family: Arial, Sans-Serif;
+        font-size: smaller;
+        font-weight: 100;
+      }
+      
+      
+      #breadcrumb {
+        position: absolute;
+        top: 3em;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        
+      }
+      
+      #breadcrumb li {
+        display: inline;
+        border-left: 1px solid black;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        margin: 0;
+      }
+      
+      #breadcrumb li:first-child {
+        border: 0;
+        padding-left: 0;
+      }
+      
+      
+} 
+
+  
+
+@media(max-width: 767px)
+{   
+
+.mainflex.donec{
+    width: 100%;    
+}
+
+.navflex.sidebar{
+    margin: 20px auto;
+    float: none;
+    order: 2;
+}
+
+.navbarbottomflex ul{
+    padding-left: 1.2500em;
+    margin-top: 0.9375em;
+    margin-left: 0;
+}
+}
