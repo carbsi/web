@@ -1,0 +1,696 @@
+ Script started on Mon May 30 12:03:34 2022
+ bash-4.2$ pwd
+ /tmp/karpot
+ bash-4.2$ ls -l
+ total 8
+ -rw-r--r--. 1 karpot users    7 May 30 12:03 itkp1011.txt
+ drwxr-xr-x. 3 karpot users   32 May 30 12:03 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users   23 May 30 12:03 venenatis
+ bash-4.2$ mkdir ac
+ bash-4.2$ cd ac
+ bash-4.2$ ls
+ bash-4.2$ pwd
+ /tmp/karpot/ac
+ bash-4.2$ mkdir convallis
+ bash-4.2$ mkdir donec
+ bash-4.2$ cd ..
+ bash-4.2$ ls -l
+ total 8
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ -rw-r--r--. 1 karpot users    7 May 30 12:03 itkp1011.txt
+ drwxr-xr-x. 3 karpot users   32 May 30 12:03 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users   23 May 30 12:03 venenatis
+ bash-4.2$ cp itkp1011.txt /ac/donec
+ cp: cannot create regular file /ac/donec: No such file or directory
+ bash-4.2$ cp itkp1011.txt /ac
+ cp: cannot create regular file /ac: Permission denied
+ bash-4.2$ ls -l
+ total 8
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ -rw-r--r--. 1 karpot users    7 May 30 12:03 itkp1011.txt
+ drwxr-xr-x. 3 karpot users   32 May 30 12:03 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users   23 May 30 12:03 venenatis
+ bash-4.2$ mv itkp1011.txt /ac/donec
+ mv: cannot move itkp1011.txt to /ac/donec: No such file or directory
+ bash-4.2$ ls -l
+ total 8
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ -rw-r--r--. 1 karpot users    7 May 30 12:03 itkp1011.txt
+ drwxr-xr-x. 3 karpot users   32 May 30 12:03 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users   23 May 30 12:03 venenatis
+ bash-4.2$ cp itkp1011.txt /ac
+ cp: cannot create regular file /ac: Permission denied
+ bash-4.2$ pwd
+ /tmp/karpot
+ bash-4.2$ mv itkp1011.txt ~/tmp/karpot/ac/donec
+ mv: cannot move itkp1011.txt to /tmp/karpot/tmp/karpot/ac/donec: No such file or directory
+ bash-4.2$ nano itkp1011.txt
+ [ Reading File ] [ Read 1 line ]  GNU nano 2.8.4                                                                                                File: itkp1011.txt                                                                                                           
+> ^G Get Help	  ^O Write Out^W Where Is^K Cut Text	^J Justify^C Cur PosM-U UndoM-A Mark Text     M-] To Bracket    ^B Back^ Prev Word^A Home^P Prev Line
+> ^X Exit^R Read File^\ Replace^U Uncut Text     ^T To Spell	  ^_ Go To Line     M-E RedoM-6 Copy Text     M-W WhereIs Next  ^F Forward^ Next Word^E End^N Next Line
+> karpot
+> bash-4.2$ mv: cannot move itkp1011.txt to /tmp/karpot/tmp/karpot/ac/donec: No such file or directory
+ bash: mv:: command not found
+ bash-4.2$ mv: cannot move itkp1011.txt to /tmp/karpot/tmp/karpot/ac/donec: No such file or directory
+>           nano itkp1011.txt
+>           mv itkp1011.txt ac/donec
+ bash-4.2$ cd ac
+ bash-4.2$ ls -l
+ total 0
+ drwxr-xr-x. 2 karpot users  6 May 30 12:06 convallis
+ drwxr-xr-x. 2 karpot users 26 May 30 12:16 donec
+ bash-4.2$ cd donec
+ bash-4.2$ ls -l
+ total 4
+ -rw-r--r--. 1 karpot users 7 May 30 12:03 itkp1011.txt
+ bash-4.2$ cd ..
+ bash-4.2$ cd ..
+ bash-4.2$ pwd
+ /tmp/karpot
+ bash-4.2$ cd ac
+ bash-4.2$ cd donec
+ bash-4.2$ ls
+ itkp1011.txt
+ bash-4.2$ cp itkp1011.txt dui.txt
+ bash-4.2$ ls -l
+ total 8
+ -rw-r--r--. 1 karpot users 7 May 30 12:17 dui.txt
+ -rw-r--r--. 1 karpot users 7 May 30 12:03 itkp1011.txt
+ bash-4.2$ rm itkp1011.txt
+ bash-4.2$ ls -l
+ total 4
+ -rw-r--r--. 1 karpot users 7 May 30 12:17 dui.txt
+ bash-4.2$ cd ..
+ bash-4.2$ cd ..
+ bash-4.2$ pwd
+ /tmp/karpot
+ bash-4.2$ ls -l
+ total 4
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ drwxr-xr-x. 3 karpot users   32 May 30 12:03 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users   23 May 30 12:03 venenatis
+ bash-4.2$ cd venenatis
+ bash-4.2$ ls 
+ lorem.txt
+ bash-4.2$ mv lorem.txt ../maecenas/gravida
+ bash-4.2$ ls -l
+ total 0
+ bash-4.2$ cd ..
+ bash-4.2$ cd maecenas
+ bash-4.2$ cd gravida
+ bash: cd: gravida: Not a directory
+ bash-4.2$ ls -l
+ total 0
+ -rw-r--r--. 1 karpot users  0 May 30 12:03 amet.txt
+ drwxr-xr-x. 2 karpot users 23 May 30 12:03 ex
+ -rw-r--r--. 1 karpot users  0 May 30 12:03 gravida
+ bash-4.2$ cp gravida lorem.txt
+ bash-4.2$ ls -l
+ total 0
+ -rw-r--r--. 1 karpot users  0 May 30 12:03 amet.txt
+ drwxr-xr-x. 2 karpot users 23 May 30 12:03 ex
+ -rw-r--r--. 1 karpot users  0 May 30 12:03 gravida
+ -rw-r--r--. 1 karpot users  0 May 30 12:21 lorem.txt
+ bash-4.2$ nano gravida
+ [ Reading File ] 0 lines ]  GNU nano 2.8.4                                                                                                   File: gravida                                                                                                             
+> ^G Get Help	  ^O Write Out^W Where Is^K Cut Text	^J Justify^C Cur PosM-U UndoM-A Mark Text     M-] To Bracket    ^B Back^ Prev Word^A Home^P Prev Line
+> ^X Exit^R Read File^\ Replace^U Uncut Text     ^T To Spell	  ^_ Go To Line     M-E RedoM-6 Copy Text     M-W WhereIs Next  ^F Forward^ Next Word^E End^N Next Line
+> bash-4.2$ rmdir gravida
+ rmdir: failed to remove gravida: Not a directory
+ bash-4.2$ rm gravida
+ bash-4.2$ ls -l
+ total 0
+ -rw-r--r--. 1 karpot users  0 May 30 12:03 amet.txt
+ drwxr-xr-x. 2 karpot users 23 May 30 12:03 ex
+ -rw-r--r--. 1 karpot users  0 May 30 12:21 lorem.txt
+ bash-4.2$ nano lorem.txt
+ [ Reading File ] 0 lines ]  GNU nano 2.8.4                                                                                                  File: lorem.txt                                                                                                            
+> ^G Get Help	  ^O Write Out^W Where Is^K Cut Text	^J Justify^C Cur PosM-U UndoM-A Mark Text     M-] To Bracket    ^B Back^ Prev Word^A Home^P Prev Line
+> ^X Exit^R Read File^\ Replace^U Uncut Text     ^T To Spell	  ^_ Go To Line     M-E RedoM-6 Copy Text     M-W WhereIs Next  ^F Forward^ Next Word^E End^N Next Line
+> bash-4.2$ mkdir gravida
+ bash-4.2$ mv lorem.txt gravida
+ bash-4.2$ ls -l
+ total 0
+ -rw-r--r--. 1 karpot users  0 May 30 12:03 amet.txt
+ drwxr-xr-x. 2 karpot users 23 May 30 12:03 ex
+ drwxr-xr-x. 2 karpot users 23 May 30 12:22 gravida
+ bash-4.2$ cd gravida
+ bash-4.2$ ls
+ lorem.txt
+ bash-4.2$ cd ..
+ bash-4.2$ ls -l
+ total 0
+ -rw-r--r--. 1 karpot users  0 May 30 12:03 amet.txt
+ drwxr-xr-x. 2 karpot users 23 May 30 12:03 ex
+ drwxr-xr-x. 2 karpot users 23 May 30 12:22 gravida
+ bash-4.2$ cd ex
+ bash-4.2$ ls
+ massa.txt
+ bash-4.2$ cd..
+ bash: cd..: command not found
+ bash-4.2$ cd..
+ bash: cd..: command not found
+ bash-4.2$ ls
+ massa.txt
+ bash-4.2$ cd .
+ bash-4.2$ ls
+ massa.txt
+ bash-4.2$ cd ..
+ bash-4.2$ ls
+ amet.txt  ex  gravida
+ bash-4.2$ cd ..
+ bash-4.2$ ls
+ ac  maecenas  ohje.txt	taso5.txt  tempor  venenatis
+ bash-4.2$ ls -l
+ total 4
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ cd maecenas
+ bash-4.2$ cd ex
+ bash-4.2$ ls
+ massa.txt
+ bash-4.2$ cd ..
+ bash-4.2$ cd ..
+ bash-4.2$ ls
+ ac  maecenas  ohje.txt	taso5.txt  tempor  venenatis
+ bash-4.2$ cd ac
+ bash-4.2$ ls -l
+ total 0
+ drwxr-xr-x. 2 karpot users  6 May 30 12:06 convallis
+ drwxr-xr-x. 2 karpot users 21 May 30 12:17 donec
+ bash-4.2$ cd ..
+ bash-4.2$ cd maecenas
+ bash-4.2$ ls
+ amet.txt  ex  gravida
+ bash-4.2$ cd ex
+ bash-4.2$ ls
+ massa.txt
+ bash-4.2$ mv massa.txt ../../ac/convallis
+ bash-4.2$ ls
+ bash-4.2$ cd ..
+ bash-4.2$ cd ..
+ bash-4.2$ ls
+ ac  maecenas  ohje.txt	taso5.txt  tempor  venenatis
+ bash-4.2$ cd ac
+ bash-4.2$ ls
+ convallis  donec
+ bash-4.2$ cd convallis
+ bash-4.2$ ls
+ massa.txt
+ bash-4.2$ cd ..
+ bash-4.2$ cd ..
+ bash-4.2$ cd maecenas
+ bash-4.2$ ls -l
+ total 0
+ -rw-r--r--. 1 karpot users  0 May 30 12:03 amet.txt
+ drwxr-xr-x. 2 karpot users  6 May 30 12:26 ex
+ drwxr-xr-x. 2 karpot users 23 May 30 12:22 gravida
+ bash-4.2$ ls -l
+ total 0
+ -rw-r--r--. 1 karpot users  0 May 30 12:03 amet.txt
+ drwxr-xr-x. 2 karpot users  6 May 30 12:26 ex
+ drwxr-xr-x. 2 karpot users 23 May 30 12:22 gravida
+ bash-4.2$ chmod u=wx,g=w,o=r amet.txt
+ bash-4.2$ ls -l
+ total 0
+ --wx-w-r--. 1 karpot users  0 May 30 12:03 amet.txt
+ drwxr-xr-x. 2 karpot users  6 May 30 12:26 ex
+ drwxr-xr-x. 2 karpot users 23 May 30 12:22 gravida
+ bash-4.2$ cd venenatis
+ bash: cd: venenatis: No such file or directory
+ bash-4.2$ ls
+ amet.txt  ex  gravida
+ bash-4.2$ cd ..
+ bash-4.2$ ls -l
+ total 4
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ cd venenatis
+ bash-4.2$ ls
+ bash-4.2$ cd ..
+ bash-4.2$ ls
+ ac  maecenas  ohje.txt	taso5.txt  tempor  venenatis
+ bash-4.2$ ls -l
+ total 4
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ cd maecenas
+ bash-4.2$ ls -l
+ total 0
+ --wx-w-r--. 1 karpot users  0 May 30 12:03 amet.txt
+ drwxr-xr-x. 2 karpot users  6 May 30 12:26 ex
+ drwxr-xr-x. 2 karpot users 23 May 30 12:22 gravida
+ bash-4.2$ cd gravida
+ bash-4.2$ ls 
+ lorem.txt
+ bash-4.2$ cd ..
+ bash-4.2$ cd ..
+ bash-4.2$ ls -l
+ total 4
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ nano ohje.txt
+ [ Reading File ] 40 lines ]  GNU nano 2.8.4                                                                                                  File: ohje.txt                                                                                                             
+> ^G Get Help	  ^O Write Out^W Where Is^K Cut Text	^J Justify^C Cur PosM-U UndoM-A Mark Text     M-] To Bracket    ^B Back^ Prev Word^A Home^P Prev Line
+> ^X Exit^R Read File^\ Replace^U Uncut Text     ^T To Spell	  ^_ Go To Line     M-E RedoM-6 Copy Text     M-W WhereIs Next  ^F Forward^ Next Word^E End^N Next Line
+> .
+>  ac
+>   convallis
+>   donec
+>  itkp1011.txt
+>  maecenas
+>   amet.txt
+>   ex
+>    massa.txt
+>   gravida
+>  ohje.txt
+>  taso5.txt
+>  tempor
+>  venenatis lorem.txt
+> Tydenn kansiorakenne vastaamaan annettua
+> Tee sen jlkeen seuraavat tehtvt
+> TASO 3: Muuta tiedostolle amet.txt seuraavat oikeudet:kyttj : kirjoitusoikeuskyttj : suoritusoikeusryhm : kirjoitusoikeusmuut : lukuoikeusPoista tiedostolta kaikki muut oikeudet
+> TASO 1: Kopioi tiedosto itkp1011.txt donec-kansioon dui.txt-nimelle
+> TASO 1: Siirr tiedosto lorem.txt gravida-kansioon.
+> TASO 1: Kopioi tiedosto massa.txt convallis-kansioon.
+> TASO 5: Toteuta seuraava tehtv kytten komentoja:wget, less, cat, grep, sort ja wcHae satunnainen sislt osoitteesta:
+>  http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={city}&maa={cou$Korvaa sivun sisllll alkuperinen itkp1011.txt-tiedosto.Tutki tiedoston sislt ennen seuraavan ongelman ratkaisemista.Selvit kuinka monta uniikkia kaupunkia tiedostossa esiintyyOhjaa vastauksena saamasi luku taso5.txt-tiedostoon.Tiedostossa saa lukea vain vastaukseen vaadittu luku
+> [ line 1/41 (2%), col 1/2 (50%), char 0/1337 (0%) ]
+> Modified
+> $a={cou$.
+> Save modified buffer?  (Answering "No" will DISCARD changes.)                                                                                                                                                                                 Y Yes
+>  N No  ^C Cancel
+> bash-4.2$ nano wget
+ [ New File ]  GNU nano 2.8.4                                                                                                    File: wget                                                                                                               
+> ^G Get Help	  ^O Write Out^W Where Is^K Cut Text	^J Justify^C Cur PosM-U UndoM-A Mark Text     M-] To Bracket    ^B Back^ Prev Word^A Home^P Prev Line
+> ^X Exit^R Read File^\ Replace^U Uncut Text     ^T To Spell	  ^_ Go To Line     M-E RedoM-6 Copy Text     M-W WhereIs Next  ^F Forward^ Next Word^E End^N Next Line
+> bash-4.2$ man wget
+ WGET(1)                                                                                                         GNU Wget                                                                                                        WGET(1)
+ NAME
+        Wget - The non-interactive network downloader.
+ SYNOPSIS
+        wget [option]... [URL]...
+ DESCRIPTION
+        GNU Wget is a free utility for non-interactive download of files from the Web.  It supports HTTP, HTTPS, and FTP protocols, as well as retrieval through HTTP proxies.
+        Wget is non-interactive, meaning that it can work in the background, while the user is not logged on.  This allows you to start a retrieval and disconnect from the system, letting Wget finish the work.  By contrast, most of
+        the Web browsers require constant user's presence, which can be a great hindrance when transferring a lot of data.
+        Wget can follow links in HTML, XHTML, and CSS pages, to create local versions of remote web sites, fully recreating the directory structure of the original site.  This is sometimes referred to as "recursive downloading."
+        While doing that, Wget respects the Robot Exclusion Standard (/robots.txt).  Wget can be instructed to convert the links in downloaded files to point at the local files, for offline viewing.
+        Wget has been designed for robustness over slow or unstable network connections; if a download fails due to a network problem, it will keep retrying until the whole file has been retrieved.  If the server supports regetting,
+        it will instruct the server to continue the download from where it left off.
+ OPTIONS
+    Option Syntax
+        Since Wget uses GNU getopt to process command-line arguments, every option has a long form along with the short one.  Long options are more convenient to remember, but take time to type.  You may freely mix different option
+        styles, or specify options after the command-line arguments.  Thus you may write:
+                wget -r --tries=10 http://fly.srk.fer.hr/ -o log
+        The space between the option accepting an argument and the argument may be omitted.  Instead of -o log you can write -olog.
+        You may put several options that do not require arguments together, like:
+                wget -drc <URL>
+        This is completely equivalent to:
+                wget -d -r -c <URL>
+        Since the options can be specified after the arguments, you may terminate them with --.  So the following will try to download URL -x, reporting failure to log:
+                wget -o log -- -x
+        The options that accept comma-separated lists all respect the convention that specifying an empty list clears its value.  This can be useful to clear the .wgetrc settings.  For instance, if your .wgetrc sets
+        "exclude_directories" to /cgi-bin, the following example will first reset it, and then set it to exclude /~nobody and /~somebody.  You can also clear the lists in .wgetrc.
+                wget -X " -X /~nobody,/~somebody
+        Most options that do not accept arguments are boolean options, so named because their state can be captured with a yes-or-no ("boolean") variable.  For example, --follow-ftp tells Wget to follow FTP links from HTML files
+        and, on the other hand, --no-glob tells it not to perform file globbing on FTP URLs.  A boolean option is either affirmative or negative (beginning with --no).  All such options share several properties.
+        Unless stated otherwise, it is assumed that the default behavior is the opposite of what the option accomplishes.  For example, the documented existence of --follow-ftp assumes that the default is to not follow FTP links
+        from HTML pages.
+        Affirmative options can be negated by prepending the --no- to the option name; negative options can be negated by omitting the --no- prefix.  This might seem superfluous---if the default for an affirmative option is to not
+        do something, then why provide a way to explicitly turn it off?  But the startup file may in fact change the default.  For instance, using "follow_ftp = on" in .wgetrc makes Wget follow FTP links by default, and using
+        --no-follow-ftp is the only way to restore the factory default from the command line.
+    Basic Startup Options
+        -V
+        --version
+            Display the version of Wget.
+        -h
+  Manual page wget(1) line 1 (press h for help or q to quit)
+>  ^X^?
+>  Manual page wget(1) line 1 (press h for help or q to quit)
+>  Manual page wget(1) line 1 (press h for help or q to quit)
+> bash-4.2$ cd ac
+ bash-4.2$ ls
+ convallis  donec
+ bash-4.2$ cd donec
+ bash-4.2$ ls
+ dui.txt
+ bash-4.2$ cd ..
+ bash-4.2$ cd ..
+ bash-4.2$ ls
+ ac  maecenas  ohje.txt	taso5.txt  tempor  venenatis
+ bash-4.2$ touch itkp1011.txt
+ bash-4.2$ ls -l
+ total 4
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ -rw-r--r--. 1 karpot users    0 May 30 12:45 itkp1011.txt
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ wget  http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={ 
+> city}&maa={cou$ -O itkp1011.txt
+>           ls -l
+           wget  http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={c
+> city}&maa={cou$ -O itkp1011.txt
+>           ls -l
+           wget  http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={ 
+> city}&maa={cou$ -O itkp1011.txt
+ [1] 74868
+ [2] 74869
+ [3] 74870
+ [4] 74871
+ [5] 74872
+ [6] 74873
+ [7] 74875
+ [8] 74877
+ [9] 74878
+ [10] 74879
+ --2022-05-30 12:48:00--  http://www.filltext.com/?rows=1000
+ Resolving www.filltext.com (www.filltext.com)... bash: 150,200}: command not found
+ bash: 10-01-1950,30-12-1999}: command not found
+ bash: -O: command not found
+ [2]   Done                    nro={index}
+ [3]   Done                    etunimi={firstName}
+ [4]   Done                    sukunimi={lastName}
+ [5]   Done                    email={email}
+ [6]   Done                    puhelinnumero={phone}
+ [7]   Exit 127                pituus={numberRange | 150,200}
+ [8]-  Exit 127                syntymaaika={date | 10-01-1950,30-12-1999}
+ [9]   Done                    postinumero={zip}
+ [10]+  Done                    kaupunki={city}
+ bash-4.2$ 3.143.212.6
+ Connecting to www.filltext.com (www.filltext.com)|3.143.212.6|:80... connected.
+ HTTP request sent, awaiting response... 200 OK
+ Length: unspecified [application/json]
+ Saving to: index.html?rows=1000
+     [<=>                                                                                                                                                                                                 ] 0           --.-K/s              
+>     [ <=>                                                                                                                                                                                                ] 3,001       --.-K/s   in 0s      
+ 2022-05-30 12:48:00 (135 MB/s) - index.html?rows=1000 saved [3001]
+ ls
+ ac  index.html?rows=1000  itkp1011.txt	maecenas  ohje.txt  taso5.txt  tempor  venenatis
+ [1]+  Done                    wget http://www.filltext.com/?rows=1000
+ bash-4.2$ 
+ bash-4.2$ 
+ bash-4.2$ 
+ bash-4.2$ 
+ bash-4.2$ 
+ bash-4.2$ ls -l
+ total 8
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ -rw-r--r--. 1 karpot users 3001 May 30 12:48 index.html?rows=1000
+ -rw-r--r--. 1 karpot users    0 May 30 12:45 itkp1011.txt
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ cd itkp1011
+ bash: cd: itkp1011: No such file or directory
+ bash-4.2$ nano itkp1011
+ [ New File ]  GNU nano 2.8.4                                                                                                  File: itkp1011                                                                                                             
+> ^G Get Help	  ^O Write Out^W Where Is^K Cut Text	^J Justify^C Cur PosM-U UndoM-A Mark Text     M-] To Bracket    ^B Back^ Prev Word^A Home^P Prev Line
+> ^X Exit^R Read File^\ Replace^U Uncut Text     ^T To Spell	  ^_ Go To Line     M-E RedoM-6 Copy Text     M-W WhereIs Next  ^F Forward^ Next Word^E End^N Next Line
+> bash-4.2$ nano index.html?rows=1000
+ [ Reading File ] [ Read 1 line ]  GNU nano 2.8.4                                                                                            File: index.html?rows=1000                                                                                                       
+> ^G Get Help	  ^O Write Out^W Where Is^K Cut Text	^J Justify^C Cur PosM-U UndoM-A Mark Text     M-] To Bracket    ^B Back^ Prev Word^A Home^P Prev Line
+> ^X Exit^R Read File^\ Replace^U Uncut Text     ^T To Spell	  ^_ Go To Line     M-E RedoM-6 Copy Text     M-W WhereIs Next  ^F Forward^ Next Word^E End^N Next Line
+> [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{$Modified
+> Save modified buffer?  (Answering "No" will DISCARD changes.)                                                                                                                                                                                 Y Yes
+>  N No  ^C Cancel
+> bash-4.2$ nan index.html?rows=1000
+>              index.html?rows=1000
+>             index.html?rows=1000
+>            index.html?rows=1000
+>           m index.html?rows=1000
+>            v index.html?rows=1000
+>                                   itkp1011.txt
+ bash-4.2$ ls -l
+ total 8
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ -rw-r--r--. 1 karpot users 3001 May 30 12:48 itkp1011.txt
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ nano itkp1011.txt
+ [ Reading File ] [ Read 1 line ]  GNU nano 2.8.4                                                                                                File: itkp1011.txt                                                                                                           
+> ^G Get Help	  ^O Write Out^W Where Is^K Cut Text	^J Justify^C Cur PosM-U UndoM-A Mark Text     M-] To Bracket    ^B Back^ Prev Word^A Home^P Prev Line
+> ^X Exit^R Read File^\ Replace^U Uncut Text     ^T To Spell	  ^_ Go To Line     M-E RedoM-6 Copy Text     M-W WhereIs Next  ^F Forward^ Next Word^E End^N Next Line
+> [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{$
+> bash-4.2$ cat itkp1011.txt
+ [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}]bash-4.2$ 
+ bash-4.2$ 
+ bash-4.2$ nano
+   GNU nano 2.8.4                                                                                                    New Buffer                                                                                                               
+> ^G Get Help	  ^O Write Out^W Where Is^K Cut Text	^J Justify^C Cur PosM-U UndoM-A Mark Text     M-] To Bracket    ^B Back^ Prev Word^A Home^P Prev Line
+> ^X Exit^R Read File^\ Replace^U Uncut Text     ^T To Spell	  ^_ Go To Line     M-E RedoM-6 Copy Text     M-W WhereIs Next  ^F Forward^ Next Word^E End^N Next Line
+> bash-4.2$ ls -l
+ total 8
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ -rw-r--r--. 1 karpot users 3001 May 30 12:48 itkp1011.txt
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ nano itkp1011
+ [ New File ]  GNU nano 2.8.4                                                                                                  File: itkp1011                                                                                                             
+> ^G Get Help	  ^O Write Out^W Where Is^K Cut Text	^J Justify^C Cur PosM-U UndoM-A Mark Text     M-] To Bracket    ^B Back^ Prev Word^A Home^P Prev Line
+> ^X Exit^R Read File^\ Replace^U Uncut Text     ^T To Spell	  ^_ Go To Line     M-E RedoM-6 Copy Text     M-W WhereIs Next  ^F Forward^ Next Word^E End^N Next Line
+> bash-4.2$ vim itkp1011
+   
+ OSC: 11;?
+ "itkp1011" [New File]~                                                                                                                                                                                                                                            0,0-1All-- INSERT --0,1Alla1,2d3q4:5q6w72,1:2q33,144,0-1All:q
+> E37: No write since last change (add ! to override)4,0-1All"help.txt" t[readonly] 221L, 8249Chelp.txtFor Vim version 7.4.  Last change: 2012 Dec 06VIM - main help filek
+       Move around:  Use the cursor keys, or "h" to go left,            h   l                    "j" to go down, "k" to go up, "l" to go right.       jClose this window:  Use ":q<Enter>".   Get out of Vim:  Use ":qa!<Enter>" (careful, all changes are lost!).Jump to a subject:  Position the cursor on a tag (e.g. bars) and hit CTRL-].   With the mouse:  ":set mouse=a" to enable the mouse (in xterm or GUI).                    Double-click the left mouse button on a tag, e.g. bars.        Jump back:  Type CTRL-T or CTRL-O (repeat to go further back).Get specific help:  It is possible to go directly to whatever you want help                    on, by giving an argument to the :help command.                    It is possible to further specify the context:                                                        help-context                          WHAT                  PREPEND    EXAMPLE                      Normal mode command      (nothing)   :help x                      Visual mode command         v_       :help v_u                      Insert mode command         i_       :help i_<Esc>                      Command-line command        :        :help :quit                      Command-line editing        c_       :help c_<Del>                      Vim command argument        -        :help -r                      Option                      '        :help 'textwidth'  Search for help:  Type ":help word", then hit CTRL-D to see matching                    help entries for "word".                    Or use ":helpgrep word". :helpgrephelp.txt [Help][RO]                                                                                                                                                                                                        1,1            Topitkp1011 [+]                                                                                                                                                                                                               4,0-1          Bot2,0-13,4-25
+ [1]+  Stopped                 vim itkp1011
+ bash-4.2$ s -l
+ bash: s: command not found
+ bash-4.2$ ls -l
+ total 8
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ -rw-r--r--. 1 karpot users 3001 May 30 12:48 itkp1011.txt
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ rm itkp1011
+ rm: cannot remove itkp1011: No such file or directory
+ bash-4.2$ rm itkp1011.txt
+ bash-4.2$ touch itkp1011
+ bash-4.2$ ls -l
+ total 4
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ -rw-r--r--. 1 karpot users    0 May 30 12:54 itkp1011
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ wget " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki" 
+>                                                                                                                                                                                                                                            ="
+> "
+> {city}&maa={cou$" -O itkp1011.txt
+  http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={city}&maa={cou$: Scheme missing.
+ bash-4.2$ ls -l
+ total 4
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ -rw-r--r--. 1 karpot users    0 May 30 12:54 itkp1011
+ -rw-r--r--. 1 karpot users    0 May 30 12:56 itkp1011.txt
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ rm itkp1011
+ bash-4.2$ nano itkp1011.txt
+ [ Reading File ] 0 lines ]  GNU nano 2.8.4                                                                                                File: itkp1011.txt                                                                                                           
+> ^G Get Help	  ^O Write Out^W Where Is^K Cut Text	^J Justify^C Cur PosM-U UndoM-A Mark Text     M-] To Bracket    ^B Back^ Prev Word^A Home^P Prev Line
+> ^X Exit^R Read File^\ Replace^U Uncut Text     ^T To Spell	  ^_ Go To Line     M-E RedoM-6 Copy Text     M-W WhereIs Next  ^F Forward^ Next Word^E End^N Next Line
+> bash-4.2$ ls -l
+ total 4
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ -rw-r--r--. 1 karpot users    0 May 30 12:56 itkp1011.txt
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ nano itkp1011.txt
+>           wget " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={
+> {city}&maa={cou$" -O itkp1011.txt
+  http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={city}&maa={cou$: Scheme missing.
+ bash-4.2$ wget " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={
+> {city}&maa={cou$" -O itkp1011.txt
+>           ls -l
+           wget " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={
+> {city}&maa={cou$" -O itkp1011.txt
+>           ls -l
+           wget " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={
+> {city}&maa={cou$" -O itkp1011.txt
+>               " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={c
+>             " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={ci
+>            " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={cit
+>           " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={city
+>          c " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={city
+>          u " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={cit
+>           r " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={ci
+>            l " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={c
+                   >> itkp1011.txt
+ curl: (3) [globbing] too many globs used
+ bash-4.2$ ^C
+ bash-4.2$ curl " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={
+> {city}&maa={cou$" >> itkp1011.txt
+>           wget
+                   -O             
+>           curl
+                   >>             
+>                 " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={
+>              - " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki=
+>               g " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki
+ curl: (1) Protocol  http not supported or disabled in libcurl
+ bash-4.2$ curl -g " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunk
+> ki={city}&maa={cou$" >> itkp1011.txt
+>                " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={                                
+>           wget
+                  -O             
+> ls -l
+           wget " http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={
+> {city}&maa={cou$ -O itkp1011.txt
+>                 http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={c
+>               http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={ci
+>                http://www.filltext.com/?rows=1000&nro={index}&etunimi={firstName}&sukunimi={lastName}&email={email}&puhelinnumero={phone}&pituus={numberRange|150,200}&syntymaaika={date|10-01-1950,30-12-1999}&postinumero={zip}&kaupunki={ci
+ [2] 87140
+ [3] 87141
+ [4] 87142
+ [5] 87143
+ [6] 87144
+ [7] 87145
+ [8] 87147
+ [9] 87149
+ [10] 87150
+ [11] 87151
+ --2022-05-30 13:00:19--  http://www.filltext.com/?rows=1000
+ Resolving www.filltext.com (www.filltext.com)... 3.143.212.6
+ Connecting to www.filltext.com (www.filltext.com)|3.143.212.6|:80... bash: 10-01-1950,30-12-1999}: command not found
+ bash: 150,200}: command not found
+ bash: -O: command not found
+ [3]   Done                    nro={index}
+ [4]   Done                    etunimi={firstName}
+ [5]   Done                    sukunimi={lastName}
+ [6]   Done                    email={email}
+ [7]   Done                    puhelinnumero={phone}
+ [8]   Exit 127                pituus={numberRange | 150,200}
+ [9]   Exit 127                syntymaaika={date | 10-01-1950,30-12-1999}
+ [10]   Done                    postinumero={zip}
+ [11]-  Done                    kaupunki={city}
+ bash-4.2$ connected.
+ HTTP request sent, awaiting response... 200 OK
+ Length: unspecified [application/json]
+ Saving to: index.html?rows=1000
+     [<=>                                                                                                                                                                                                 ] 0           --.-K/s              
+>     [ <=>                                                                                                                                                                                                ] 3,001       --.-K/s   in 0s      
+ 2022-05-30 13:00:20 (137 MB/s) - index.html?rows=1000 saved [3001]
+ [2]-  Done                    wget http://www.filltext.com/?rows=1000
+ bash-4.2$ ls -l
+ total 8
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ -rw-r--r--. 1 karpot users 3001 May 30 13:00 index.html?rows=1000
+ -rw-r--r--. 1 karpot users    0 May 30 12:57 itkp1011.txt
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ nano index.html?rows=1000
+ [ Reading File ] [ Read 1 line ]  GNU nano 2.8.4                                                                                            File: index.html?rows=1000                                                                                                       
+> ^G Get Help	  ^O Write Out^W Where Is^K Cut Text	^J Justify^C Cur PosM-U UndoM-A Mark Text     M-] To Bracket    ^B Back^ Prev Word^A Home^P Prev Line
+> ^X Exit^R Read File^\ Replace^U Uncut Text     ^T To Spell	  ^_ Go To Line     M-E RedoM-6 Copy Text     M-W WhereIs Next  ^F Forward^ Next Word^E End^N Next Line
+> [{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{$[{},{},	},{},{}	{},{},{	,
+> },{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},
+> $},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{}	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{},{}	{},{},{	,{},{},	},{
+> $,{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},{},	{},{},{	,{},
+> bash-4.2$ nan index.html?rows=1000
+>              index.html?rows=1000
+>             index.html?rows=1000
+>            index.html?rows=1000
+>           m index.html?rows=1000
+>            v index.html?rows=1000
+>                                   itkp1011.txt
+ bash-4.2$ ls -l
+ total 8
+ drwxr-xr-x. 4 karpot users   36 May 30 12:06 ac
+ -rw-r--r--. 1 karpot users 3001 May 30 13:00 itkp1011.txt
+ drwxr-xr-x. 4 karpot users   47 May 30 12:22 maecenas
+ -rw-r--r--. 1 karpot users 1476 May 30 12:03 ohje.txt
+ -rw-r--r--. 1 karpot users    0 May 30 12:03 taso5.txt
+ drwxr-xr-x. 2 karpot users    6 May 30 12:03 tempor
+ drwxr-xr-x. 2 karpot users    6 May 30 12:20 venenatis
+ bash-4.2$ nano taso5.txt
+ [ Reading File ] 0 lines ]  GNU nano 2.8.4                                                                                                  File: taso5.txt                                                                                                            
+> ^G Get Help	  ^O Write Out^W Where Is^K Cut Text	^J Justify^C Cur PosM-U UndoM-A Mark Text     M-] To Bracket    ^B Back^ Prev Word^A Home^P Prev Line
+> ^X Exit^R Read File^\ Replace^U Uncut Text     ^T To Spell	  ^_ Go To Line     M-E RedoM-6 Copy Text     M-W WhereIs Next  ^F Forward^ Next Word^E End^N Next Line
+> bash-4.2$ tarkista
+ Taso 5 puuttuu kokonaan tai on toteutettu vrin
+ Komentorivitehtvsi on hyvksytty arvosanalla 3
+ Muista lopettaa valmis tehtv exit-komennolla! 
+ 9a8b2e192d4006626227f99f5f4020823076081feb696806b591cb7a9dc5828a4f6205819675157187a4c08401131c6c2f5ba01f03bdc5814f67a1f0799a1900
+ bash-4.2$ exit
+ Lopetetaan tehtv. Odota hetki.
+ [1]+  Killed                  vim itkp1011
+ exit
+ /tmp/karpot/
+  [drwxr-xr-x karpot  ]  ac
+   [drwxr-xr-x karpot  ]  convallis
+    [-rw-r--r-- karpot  ]  massa.txt
+   [drwxr-xr-x karpot  ]  donec
+       [-rw-r--r-- karpot  ]  dui.txt
+  [-rw-r--r-- karpot  ]  itkp1011.txt
+  [drwxr-xr-x karpot  ]  maecenas
+   [--wx-w-r-- karpot  ]  amet.txt
+   [drwxr-xr-x karpot  ]  ex
+   [drwxr-xr-x karpot  ]  gravida
+       [-rw-r--r-- karpot  ]  lorem.txt
+  [-rw-r--r-- karpot  ]  ohje.txt
+  [-rw-r--r-- karpot  ]  taso5.txt
+  [drwxr-xr-x karpot  ]  tempor
+  [drwxr-xr-x karpot  ]  venenatis
+ Taso 5 puuttuu kokonaan tai on toteutettu vrin
+ Komentorivitehtvsi on hyvksytty arvosanalla 3
+ Muista lopettaa valmis tehtv exit-komennolla! 
+ 9a8b2e192d4006626227f99f5f4020823076081feb696806b591cb7a9dc5828a4f6205819675157187a4c08401131c6c2f5ba01f03bdc5814f67a1f0799a1900
